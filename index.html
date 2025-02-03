@@ -4,80 +4,285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arundhati Dange | Resume</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Arundhati Dange - Resume</title>
+    <!-- Import Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <link href="global.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>Arundhati Dange</h1>
-        <p>Master’s Student in Computer Science | Software Development & Data Science Enthusiast</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a Master's student in Computer Science at Virginia Tech. Passionate about creating software that is both functional and user-friendly, I specialize in application development and data science. I am actively seeking Summer 2025 internships and full-time opportunities in software development.</p>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>SQL</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Git</li>
-                <li>Agile Methodologies</li>
-            </ul>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Airline Data Analysis Dashboard</h3>
-                <p>Developed a visualization dashboard for analyzing airline ticketing data, using T5 architecture for natural language querying.</p>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="text-center">
+            <h2>Arundhati Dange</h2>
+            <p class="contact-info">
+                Charlottesville, VA •
+                <a href="mailto:arundhatiavinash@vt.edu">arundhatiavinash@vt.edu</a> •
+                <a href="https://linkedin.com/in/arundhati-dange" target="_blank">LinkedIn</a><span class="hidden-section"> •
+                <a href="https://github.com/arundhati-c" target="_blank">Github</a></span>
+            </p>
+        </header>
+        <!-- About Me Section -->
+        <section>
+            <div class="section-content">
+                <p class="text-center">Master’s Student in Computer Science | Software Development & Data Science
+                    Enthusiast | Open to Full-time roles in Software Development and Data Science</p>
             </div>
         </section>
-
-        <section id="experience">
-            <h2>Experience</h2>
-            <p>Details to be added...</p>
+        <!-- Education Section -->
+        <section>
+            <div class="section-title">EDUCATION</div>
+            <hr>
+            <ul class="education-list">
+                <li>
+                    <div class="subsection-title">Virginia Tech (May 2025) </div>
+                    <div class="subsection-subtitle">Master of Engineering in Computer Science and Applications, GPA:
+                        3.6 </div>
+                    <div class="subsection-description">
+                        Coursework: Urban Computing, Information Visualization, Machine Learning with Big Data, AI Tools
+                        in
+                        Software Development, Software Engineering, Mobile App Development, etc.
+                    </div>
+                </li>
+                <li>
+                    <div class="subsection-title">Cummins College of Engineering for Women, Pune (May 2022) </div>
+                    <div class="subsection-subtitle">Bachelor of Technology, Computer Engineering, GPA: 3.4 </div>
+                    <div class="subsection-description">
+                        Coursework: Data Structures, Networking, Database Systems, OOP, Cloud Computing, Data Mining,
+                        etc.</div>
+                </li>
+            </ul>
         </section>
-
-        <section id="resume">
-            <h2>Resume</h2>
-            <a href="resume.pdf" class="btn">Download Resume</a>
+        <br>
+        <!-- Skills Section -->
+        <section>
+            <div class="section-title">TECHNICAL SKILLS</div>
+            <hr>
+            <ul class="skills-list">
+                <li><strong>Programming:</strong>Python, Java, SQL, HTML, CSS, JavaScript</li>
+                <li><strong>Technologies:</strong>NoSQL, LLMs, Git, AWS, REST API</li>
+                <li><strong>Frameworks and Libraries:</strong>Pandas, Numpy, Seaborn, Scikit Learn, Spring Boot,
+                    Angular, Django, Bootstrap, React</li>
+                <li><strong>Skills:</strong>Data Engineering, Data Analysis, Software Development, Natural Language
+                    Processing, Machine Learning, Cloud Computing</li>
+            </ul>
         </section>
+        <br>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/arundhati-dange-1a1a3b1b3/">LinkedIn</a>
-                <a href="https://github.com/arundhatidange">GitHub</a>
-                <a href="mailto:your-email@example.com">Email</a>
-            </div>
+        <!-- Projects Section -->
+        <section>
+            <div class="section-title">PROJECTS</div>
+            <hr>
+            <ul class="project-list">
+                <li>
+                    <div class="project-title"><a href="https://code.vt.edu/cs5934-capstone-project-group-4/aviation-analytics-dashboard-database-layer">Airline Data Exploration and Visualization Dashboard</a> (Aug 2024 – Dec 2024)
+                    </div>
+                    <div class="project-subtitle">Python, SQL, NLP, LLM, Data Visualization</div>
+                    <div class="project-description">
+                        <ul>
+                            <li>Data Acquisition & Migration: Procured and cleaned <a href="Airline Data Exploration and Visualization Dashboard">DB1B airline dataset</a>.</li>
+                            <li>Developed NLP interface using T5 transformer model to convert queries into SQL.</li>
+                            <li>Trained multiple T5 model variants for optimized performance in SQL generation.</li>
+                            <li>Designed SQL queries for data extraction and integrated results into an interactive
+                                dashboard.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-title"><a href="https://drive.google.com/file/d/1JARrtzQlqVYT8rNCF9g_V69C-SRfFWI8/view?usp=sharing" target="_blank">Identifying Parking Demand Hotspots and Predicting Rate Surge Using Machine Learning</a> (Oct 2023 – Dec
+                        2023)</div>
+                    <div class="project-subtitle">Python, ML, Data Engineering, Data Visualization </div>
+                    <div class="project-description">
+                        <ul>
+                            <li>Cleaned and integrated Seattle’s Paid Parking dataset.</li>
+                            <li>Developed Random Forest model with 92.73% accuracy for parking rate surge prediction.
+                            </li>
+                            <li>Applied K-means clustering to identify demand hotspots.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-title"><a
+                            href="https://drive.google.com/drive/folders/1xLkqotziHDoqG2qrPqRr41icOC1MJpMQ?usp=sharing"
+                            target="_blank">Social Media Hashtag Analysis</a> (Oct 2024)</div>
+                    <div class="project-subtitle">AWS EMR, Hadoop, Spark, Python </div>
+                    <div class="project-description">
+                        <ul>
+                            <li>Analyzed political hashtags from social media tweets using AWS EMR and Hadoop.</li>
+                            <li>Developed MapReduce programs to calculate hashtag frequencies.</li>
+                            <li>Employed Hadoop and Spark for parallel data processing, enabling fast and reliable
+                                analysis of the tweet data.</li>
+                            <li>Developed a custom MapReduce program for hashtag extraction and frequency calculation,
+                                optimizing processing time and resource usage.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-title"><a
+                            href="https://drive.google.com/drive/folders/1lGHIZV1B1Lulft1O4-FsIJGg84s7Bmex?usp=drive_link"
+                            target="_blank">Wine Quality Prediction using AWS SageMaker</a> (Dec 2024)</div>
+                    <div class="project-subtitle">AWS SageMaker, Machine Learning, Python, CloudWatch</div>
+                    <div class="project-description">
+                        <ul>
+                            <li>Developed a wine quality classifier using the UCI white wine dataset, categorizing wines
+                                into low, average, and high quality based on quality scores.</li>
+                            <li>Trained and evaluated two models, optimizing for accuracy, precision, and recall.</li>
+                            <li>Utilized AWS SageMaker for model training and deployment, implementing IAM roles and
+                                CloudWatch logs for monitoring.</li>
+                            <li>Applied S3 access logs to track data usage and ensured efficient resource utilization
+                                via CloudWatch metrics.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-title"><a href="https://drive.google.com/file/d/18B_7cOdiMoLhlRFRCSe2ruzeY44FiQdT/view?usp=sharing" target="_blank">AWS Lambda-based Bookstore Web Application</a>
+                        (Nov 2024)</div>
+                    <div class="project-subtitle">AWS Lambda, API Gateway, JSON, Database</div>
+                    <div class="project-description">
+                        <ul>
+                            <li>Developed and deployed a set of RESTful APIs using AWS Lambda for a database-backed web
+                                application.</li>
+                            <li>Implemented API endpoints for managing categories and books, including adding, fetching,
+                                and updating data.</li>
+                            <li>Integrated Lambda functions with Amazon API Gateway for seamless communication between
+                                frontend and backend.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-title"><a href="https://github.com/mahimasingh-VTU/InformationVisualization_TermProject" target="_blank">Vehicle and Sales Transaction Analysis</a>
+                        (Jun 2024 – Jul 2024)</div>
+                    <div class="project-subtitle">Python, Dash, Pandas, Matplotlib, Seaborn, Plotly, GeoPandas</div>
+                    <div class="project-description">
+                        <ul>
+                            <li>Analyzed a dataset of 558k vehicle sales records from 1995 to 2015 to identify market
+                                trends and pricing strategies.</li>
+                            <li>Created interactive visualizations including line plots, scatter plots, bar charts,
+                                heatmaps, and geographical maps to explore relationships between vehicle features (make,
+                                model, body type, etc.) and sale prices.</li>
+                            <li>Designed an interactive dashboard with filtering options for vehicle make/model, sale
+                                year range, condition, and geographic region.</li>
+                            <li>Responsible for data preprocessing, implementation of dynamic graph updates, and
+                                dashboard deployment.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-title">Mastermind Game with ChatGPT (Jan 2024 –
+                        May 2024)</div>
+                    <div class="project-subtitle">OpenAI GPT-3.5-Turbo, Jupyter Notebook, Python, Prompt Engineering
+                    </div>
+                    <div class="project-description">
+                        <ul>
+                            <li>Developed a two-round quiz game where OpenAI’s GPT-3.5-Turbo acts as the quizmaster and
+                                interacts with the contestant to ask specialized and general trivia questions.</li>
+                            <li>Engineered prompts to guide GPT-3.5-Turbo in asking questions, adjudicating answers, and
+                                tracking scores across two rounds.</li>
+                            <li>Implemented custom game rules allowing the contestant to "pass" on questions and ensured
+                                accurate final score reporting out of 6 based on correct/incorrect answers.</li>
+                            <li>Ran multiple gameplay sessions to validate the functionality, including scenarios where
+                                incorrect answers were intentionally given to test the system’s ability to track and
+                                report score.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-title">Research Project | <a href="https://drive.google.com/file/d/1y4B8L0IcMlYIiqb5PQX-z9g5L5SHBsIv/view?usp=sharing" target="_blank">Light on the dark side of social media</a> (Jan 2024 – May
+                        2024)</div>
+                    <div class="project-subtitle">Virginia Polytechnic Institute and State University, VA, USA</div>
+                    <div class="project-description">
+                        <ul>
+                            <li>Conducted an in-depth study on the adverse effects of social media on younger
+                                generations, focusing on the issues of addiction, mental health, and exposure to harmful
+                                content.</li>
+                            <li>Led surveys and data analysis on social media usage patterns, addiction metrics, and the
+                                psychological impact of platforms like Instagram, TikTok, Facebook, and Twitter.</li>
+                            <li>Applied ethical frameworks (consequentialism, virtue ethics, deontology, and ethical
+                                egoism) to assess the moral responsibilities of social media companies, advertisers, and
+                                regulators.</li>
+                            <li>Proposed actionable solutions to reduce addictive behaviors, including the design of a
+                                "Work Mode" and "Scroll Pause" feature for social media apps to encourage healthier
+                                usage.</li>
+                            <li>Collaborated with a multidisciplinary team to produce a comprehensive research paper
+                                addressing the need for policy intervention.</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </section>
-    </main>
+        <!-- Experience Section -->
+        <section>
+            <div class="section-title">EXPERIENCE</div>
+            <hr>
+            <ul class="experience-list">
+                <li>
+                    <div class="experience-title">Blink Ads, India (July 2021 – May 2022)</div>
+                    <div class="experience-subtitle">Developer, Final year project (Python, Django, Figma)</div>
+                    <div class="experience-description">
+                        <ul>
+                            <li>Spearheaded the development of an advanced web crawler that analyzed URLs and generated
+                                comprehensive PDF reports on SEO performance, enhancing the client’s website
+                                optimization efforts.</li>
+                            <li>Engineered complex data scraping solutions to gather detailed website information,
+                                enabling in-depth analysis of SEO metrics and performance.</li>
+                            <li>Innovated adaptive parsing techniques to analyze diverse website structures and dynamic
+                                content, ensuring accurate and scalable data extraction.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="experience-title">Department of Computer Engineering, CCEW Pune (May 2021 – July 2021)
+                    </div>
+                    <div class="experience-subtitle">Software Development Intern (Angular, Spring Boot, SQL, Figma,
+                        Postman)</div>
+                    <div class="experience-description">
+                        <ul>
+                            <li>Architected the database schema in SQL, ensuring optimized data storage and retrieval
+                                for efficient system performance.</li>
+                            <li>Collaborated closely with the Placements department to gather and document business
+                                requirements, ensuring the system fully met the needs of stakeholders.</li>
+                            <li>Created and maintained comprehensive system documentation, enabling seamless onboarding
+                                and long-term system scalability.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="experience-title">Citi Corp, India (Mar 2021 – May 2021)</div>
+                    <div class="experience-subtitle">Front end Developer, Citibridge program (TypeScript, SQL,
+                        JavaScript)</div>
+                    <div class="experience-description">
+                        <ul>
+                            <li>Designed and developed a web-based transaction polling system to validate contents of
+                                incoming files and generate a feed file for the clearing system, improving data accuracy
+                                and process efficiency.</li>
+                            <li>Integrated front-end and back-end systems using REST APIs, enabling smooth data flow and
+                                ensuring real-time system updates.</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!-- Publications Section -->
+        <section>
+            <div class="section-title">PUBLICATIONS</div>
+            <hr>
+            <ul class="publications-list">
+                <li>
+                    <div class="publication-title">Conference Presentation - <a href="https://drive.google.com/file/d/1JZqqUnTqxC0fitkflkLcbx8gQ9jWrcUL/view?usp=sharing">‘Identifying Parking Demand Hotspots and
+                        Predicting Rate Surge Using Machine Learning’</a></div>
+                    <div class="publication-subtitle">Urban Transitions 2024, Sitges, Spain, 4-7 November 2024</div>
+                </li>
+            </ul>
+        </section>
+        <!-- Footer Section -->
+        <footer class="text-center">
+            <p>&copy; 2025 Arundhati Dange. All rights reserved.</p>
+        </footer>
+    </div>
 
-    <footer>
-        <p>© 2024 Arundhati Dange</p>
-    </footer>
+    <!-- Import Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
