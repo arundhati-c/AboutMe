@@ -1,6 +1,25 @@
+.container {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f7f6;
+  background-color: #ffffff;
   padding-top: 20px;
 }
 
@@ -87,7 +106,7 @@ body {
 }
 
 .contact-info a {
-  color: #007bff;
+  color: #5778b6;
   text-decoration: none;
 }
 
