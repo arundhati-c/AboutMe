@@ -1,3 +1,4 @@
+
 .container {
   margin-left: 50px;
   margin-right: 50px;
@@ -127,25 +128,4 @@ body {
   display: none;
 }
 
-.title-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-wrap: wrap;
-}
-
-.date {
-  font-size: 0.9rem;
-  color: #565656;
-  font-style: italic;
-}
-
-@media (max-width: 576px) {
-  .title-row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .date {
-    margin-top: 2px;
-  }
-}
+can we make the dates on experiences and education appear on the right side (right aligned) like in resumes?
